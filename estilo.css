@@ -3,6 +3,6 @@
 body{
 	background: url(https://i.imgur.com/eA1H1yB.png),
 				url(https://i.imgur.com/pN5JmXb.png),
-				linear-gradient(50deg,#ff2500,#ff005b)
-
+				linear-gradient(50deg,#ff2500,#ff005b);
+	background-attachment: fixed;
 }

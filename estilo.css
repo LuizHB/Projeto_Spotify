@@ -173,11 +173,12 @@ footer ul li{
 	margin: 0 5px;
 }
 
-footer .extra-rodape a, p{
+footer .extra-rodape a, .extra-rodape p{
 	font-size: 0.7em;
 	color: white;
 	position: relative;
 	margin: 0 5px;
+	text-align: right;
 }
 
 footer .extra-rodape a:hover{

@@ -2,6 +2,7 @@
 
 html, body, #home{
 	height: 100%;
+	overflow-x: hidden;
 }
 
 body{
@@ -50,34 +51,71 @@ nav.navbar-transparente{
 	-webkit-border-radius: 500px;
     -moz-border-radius: 500px;
 	text-transform: uppercase;
+	font-size: 1em;
 	transition: background 0.4s color 0.4s;
 	padding: 10px 20px;
 }
 
 .btn-roxo{
+	margin: 5px;
 	background: #7c25f8;
+	border: 2px solid #7c25f8;
 }
 
 .btn-roxo:hover{
 	background: #6207e3;
+	border: 2px solid #6207e3;
 	color: white;
 }
 
 .btn-branco{
+	margin: 5px;
 	border: 2px solid white;
 }
 
 .btn-branco:hover{
 	background-color: white;
+	border: 2px solid white;
 	color: black;
 }
 
 /* estrutura conteúdos */
 
-#servicos{
-	background: white;
+.caixa{
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+#servicos{
+	background: white;
+}
+
+#servicos h2, h3{
+	color: #7c25f8;
+}
+
+#recursos h2{
+	color: white;
+}
+
+#recursos h3{
+	color: #9bf0e1;
+}
+
+#recursos p{
+	color: white;
+}
+
+.albuns{
+	padding: 10px 0;
+}
+
+.rotacionar{
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	padding-left: 80px;
+	padding-top: 10px;
 }
 
 /* tipografia */
@@ -89,10 +127,74 @@ h1{
 	color: white;
 }
 
+h2{
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+
+/*rodapé*/
+
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4{
+	color: #919496;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a{
+	font-size: 0.8em;
+	color: white;
+}
+
+footer .navbar-nav a:hover{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li{
+	float: right;
+	margin: 0 5px;
+}
+
+footer .extra-rodape a, p{
+	font-size: 0.7em;
+	color: white;
+	position: relative;
+	margin: 0 5px;
+}
+
+footer .extra-rodape a:hover{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+/*Media queries */
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	.btn-custom{
 		margin: 10px 15px;
+	}
+	.space{
+		column-width: 575.98px;
+		padding: 20px;
 	}
 }
 
@@ -103,6 +205,10 @@ h1{
 	}
 	.btn-custom{
 		margin: 10px 15px;
+	}
+	.space{
+		column-width: 767.98px;
+		padding: 20px;
 	}
 }
 

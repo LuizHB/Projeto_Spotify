@@ -9,7 +9,7 @@ body{
 				url(https://i.imgur.com/pN5JmXb.png),
 				linear-gradient(50deg,#ff2500,#ff005b);
 	background-attachment: fixed;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Gotham Medium",Helvetica, Arial, sans-serif;
 }
 
 /* Barra de navegação */
@@ -24,7 +24,7 @@ nav.navbar-transparente{
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-	color: #9bf0e1;
+	color: #1ed652;
 }
 
 .navbar-light .navbar-toggler {
@@ -71,6 +71,15 @@ nav.navbar-transparente{
 	background-color: white;
 	color: black;
 }
+
+/* estrutura conteúdos */
+
+#servicos{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /* tipografia */
 
 h1{
@@ -116,4 +125,22 @@ h1{
 	h1{
 		font-size: 6em;
 	}
+}
+
+
+/* fonte do texto */
+
+@font-face{
+	font-family: "Gotham Light";
+	src: url("fontes/GothamLight.woff");
+}
+
+@font-face{
+	font-family: "Gotham Book";
+	src: url("fontes/GothamBook.woff");
+}
+
+@font-face{
+	font-family: "Gotham Medium";
+	src: url("fontes/GothamMedium.woff");
 }
